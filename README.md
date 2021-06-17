@@ -1,7 +1,7 @@
 # NUMBER GUESSING GAME
 <img align="right" width="396" height="400" src="https://raw.githubusercontent.com/hrshita-kshyp/NGG/master/NGG-i1.png">
      
-This Project is based on the Number guessing game This game is an interactive guessing game in Python. This is going to be a simple guessing game where the computer will generate a random number between 1 to 10, and the user has to guess it in 5 attempts.
+This Project is based on the Number guessing game This game is an interactive guessing game in Python. This is going to be a simple guessing game where the computer will generate a random number between 1 to 10, and the user have to guess and will exit the game until user get the correct number.
 Based on the user’s guess computer will give various hints if the number is high or low. When the user guess matches the number computer will print the answer along with the number of attempts.
 
 

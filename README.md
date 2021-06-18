@@ -18,10 +18,9 @@ Based on the user’s guess computer will give various hints if the number is hi
 - Allow the program only to exit after the user guessed correctl
 - Ask user "Would you want to play again" and user have to answer that in Y or N
  
- ### This program is not that different but I tried to code the random function 
+ ##  Technologies Used
+ - **PyCharm** (For Code)
+ - **GitHub** (For Documentation)
  
-  - In this project I learnt how to make test file,about unittest library,
-
-**Software used for coding** PyCharm
-
-### **OUTPUT**
+## **OUTPUT**
+![output ngg](https://user-images.githubusercontent.com/85073963/122510756-bd1a9200-d023-11eb-8265-13d9dc5a8c3d.gif)

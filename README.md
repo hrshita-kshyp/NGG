@@ -7,7 +7,7 @@ Based on the user’s guess computer will give various hints if the number is hi
 
 <img align="centre" width=150 height=200 src="https://media.giphy.com/media/2L1KmLRW5HOY9NRxqM/giphy.gif">
 
- ## The number guessing game, consists of 5 simple steps:
+ ## This game consists of 5 simple steps:
 
 - The function chooses a random integer between 0 and 20
 
@@ -15,8 +15,8 @@ Based on the user’s guess computer will give various hints if the number is hi
 
 - Print accordingly for a guess: “too high”, “too low”, or “just right.”
 
-- Allow the program only to exit after the user guessed correctl
-- Ask user "Would you want to play again" and user have to answer that in Y or N
+- Allow the program only to exit after the user guessed correctly
+- Ask user "Would you want to play again" and user have to answer that in Y or N before exiting 
  
  ##  Technologies Used
  - **PyCharm** (For Code)

@@ -1,74 +1,54 @@
-import builtins
 import random
-import unittest
 
-from mockito import spy, verify, when
+secretNumber = random.randint(1, 20)
 
-from number_guessing_game import NumberGuessingGame
+userGuesses = 0
+userInput = False
 
+while userInput == False:
 
-class TestNumberGuessingGame(unittest.TestCase):
-    def setUp(self) -> None:
-        self.random = spy(random)
-        self.builtins = spy(builtins)
-        self.number_guessing_game = NumberGuessingGame(random=self.random, builtins=self.builtins)
+    print("Let's play a game!")
+    print("I'll think of a number between 1 and 20 and you have 6 attempts to get it right.")
+    print("What is your first guess?")
 
-    def test_chooses_random_integer_between_zero_and_hundred(self) -> None:
-        when(random).randint(0, 100).thenReturn(42)
-        when(builtins).input('What number has been chosen?').thenReturn('42')
+    while userGuesses <= 5:
 
-        self.number_guessing_game.guessing_game()
+        userInput = input()
 
-        verify(self.random).randint(0, 100)
+        if int(userInput) > secretNumber:
+            print("Too High! Try again!")
+            userGuesses += 1
 
-    def test_takes_user_input(self) -> None:
-        when(random).randint(0, 100).thenReturn(11)
-        when(builtins).input('What number has been chosen?').thenReturn('11')
+        elif (int(userInput) < secretNumber):
+            print("Too Low! Try again!")
+            userGuesses += 1
 
-        self.number_guessing_game.guessing_game()
+        else:
+            print("Congratulations! You guessed the secret number in " + str(userGuesses + 1) + " guesses!")
+            print("Would you like to play again? Y or N")
+            playGame = input()
+            if playGame == "Y":
+                userInput = False
+                userGuesses = 0
+                # Break here to exit while loop
+                break
+            else:
+                userInput = True
+                print("Goodbye!")
 
-        verify(self.builtins).input('What number has been chosen?')
+    else:
+        print("You have run out of guesses! The number I was thinking of was " + str(secretNumber) + ". Better luck "
+                                                                                                     "next time!")
 
-    def test_outputs_too_high_when_first_guess_is_too_high(self) -> None:
-        when(random).randint(0, 100).thenReturn(11)
-        when(builtins).input('What number has been chosen?').thenReturn('33', '11')
+    print("Would you like to play again? Y or N")
+    playGame = input()
 
-        self.number_guessing_game.guessing_game()
-
-        verify(self.builtins).print('Too high')
-
-    def test_outputs_too_low_when_first_guess_is_too_low(self) -> None:
-        when(random).randint(0, 100).thenReturn(11)
-        when(builtins).input('What number has been chosen?').thenReturn('3', '11')
-
-        self.number_guessing_game.guessing_game()
-
-        verify(self.builtins).print('Too low')
-
-    def test_outputs_just_right_when_guess_is_right(self) -> None:
-        when(random).randint(0, 100).thenReturn(11)
-        when(builtins).input('What number has been chosen?').thenReturn('11')
-
-        self.number_guessing_game.guessing_game()
-
-        verify(self.builtins).print('Just right')
-
-    def test_program_keeps_asking_input_until_guess_is_right(self) -> None:
-        when(random).randint(0, 100).thenReturn(22)
-        when(builtins).input('What number has been chosen?').thenReturn('11', '33', '38', '44', '22')
-
-        self.number_guessing_game.guessing_game()
-
-        verify(self.builtins, times=5).input('What number has been chosen?')
-
-
-if __name__ == '__main__':
-    unittest.main()
-
-
-
-
-
+    if playGame == "Y":
+        userInput = False
+        userGuesses = 0
+    else:
+        userInput = True
+        print("Goodbye!")
 
 
 

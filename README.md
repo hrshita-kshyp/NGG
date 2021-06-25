@@ -5,10 +5,10 @@ This Project is based on the Number guessing game This game is an interactive gu
 Based on the user’s guess computer will give various hints if the number is high or low. When the user guess matches the number computer will print the answer along with the number of attempts.
 
 
-<img align="centre" width=150 height=200 src="https://media.giphy.com/media/2L1KmLRW5HOY9NRxqM/giphy.gif">
 
  ## This game consists of 5 simple steps:
 
+<img align="right" width=250 height=300 src="https://media.giphy.com/media/2L1KmLRW5HOY9NRxqM/giphy.gif">
 - The function chooses a random integer between 0 and 20
 
 - Ask the user to guess what number has been chosen

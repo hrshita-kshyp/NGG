@@ -4,7 +4,7 @@
 # **NUMBER GUESSING GAME**   
 
  
-This Project is based on the Number guessing game This game is an interactive guessing game in Python. This is going to be a simple guessing game where the computer will generate a random number between 1 to 50, and the user have to guess and will exit the game until the user gets the correct number.  
+This Project is based on the Number guessing game This game is an interactive guessing game in Python. This is going to be a simple guessing game where the computer will generate a random number between 1 to 20, and the user have to guess and will exit the game until the user gets the correct number.  
 
 
 Based on the user’s guess computer will give various hints if the number is high or low. When the user guess matches the number computer will print the answer along with the number of attempts.
@@ -16,7 +16,7 @@ Based on the user’s guess computer will give various hints if the number is hi
  ## This game consists of 5 simple steps:
 
 
-- The function chooses a random integer between 1 and 50
+- The function chooses a random integer between 1 and 20
 - Ask the user to guess what number has been chosen
 - Print accordingly for a guess: “too high”, “too low”, or “just right.”
 - Allow the program only to exit after the user guessed correctly

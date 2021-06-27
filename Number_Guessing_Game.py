@@ -1,6 +1,6 @@
 import random
 
-secretNumber = random.randint(1, 50)
+secretNumber = random.randint(1, 20)
 userGuesses = 0
 userInput = False
 

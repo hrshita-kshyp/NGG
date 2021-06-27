@@ -1,4 +1,4 @@
-<img align="right" width=4000 height=200 src=" https://media.giphy.com/media/2L1KmLRW5HOY9NRxqM/giphy.gif "> 
+<img align="center" width=4000 height=200 src=" https://media.giphy.com/media/2L1KmLRW5HOY9NRxqM/giphy.gif "> 
 # NUMBER GUESSING GAME
 <img align="right" width="396" height="400" src="https://raw.githubusercontent.com/hrshita-kshyp/NGG/master/NGG-i1.png">
      

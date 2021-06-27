@@ -31,8 +31,9 @@ Based on the user’s guess computer will give various hints if the number is hi
 
 Open Git Bash 
 Clone the repository by using  
+```html
 git clone https://github.com/hrshita-kshyp/NGG  
-
+```
 
 **Alternative way**
 
